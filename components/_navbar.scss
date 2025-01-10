@@ -1,0 +1,120 @@
+@import './variables';
+
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar */
+.navbar {
+    position: fixed;
+    height: 10%;
+    width: 100%;
+    background-color: $secondarycolor; /* Slightly transparent background */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10;
+    backdrop-filter: blur(5px); /* Optional: Adds a slight blur effect behind the navbar */
+    -webkit-backdrop-filter: blur(5px); /* Safari support */
+    transition: background-color 0.3s ease-in-out; /* Smooth transition for background */
+}
+
+/* Add background when scrolling */
+.navbar.scrolled {
+    background-color: $secondarycolor;
+}
+
+/* Logo */
+.logo img {
+    max-height: 250px;
+    
+}
+
+/* Navbar links */
+.navbar-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.navbar-links li {
+    margin-left: 20px;
+}
+
+.navbar-links li a {
+    font-size: 1rem;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+    color: white; /* Default color */
+    text-transform:none;
+    font-weight: bold;
+    background-clip: text; /* Make the text color gradient */
+    -webkit-background-clip: text; /* Safari support */
+    color: transparent; /* Remove default text color */
+    background-image: linear-gradient(145deg, #87CEEB, lighten(#87CEEB, 15%)); /* Sky blue gradient effect */
+    transition: color 0.3s ease, background-image 0.3s ease;
+}
+
+/* Hover effect on navbar links */
+.navbar-links li a:hover {
+    background-image: linear-gradient(145deg, lighten(#87CEEB, 10%), darken(#87CEEB, 10%)); /* Hover effect */
+    color: transparent; /* Ensures text stays gradient on hover */
+}
+
+/* Hamburger Menu */
+.hamburger {
+    display: none;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+}
+
+.hamburger span {
+    display: block;
+    width: 30px;
+    height: 7px;
+    background-color: white;
+    margin: 5px auto;
+}
+
+/* Responsive design for mobile screens */
+@media (max-width: 767px) {
+    .navbar {
+        justify-content: center;
+    }
+
+    /* Navbar links */
+    .navbar-links {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        text-align: center;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: $secondarycolor; 
+        backdrop-filter: blur(10px);
+    }
+
+    .navbar-links.active {
+        display: flex;
+    }
+
+    .navbar-links li {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .hamburger {
+        display: block;
+        position: absolute;
+        right: 20px;
+        top: 10px;
+    }
+}
