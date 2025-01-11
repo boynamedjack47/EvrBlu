@@ -106,6 +106,8 @@ body {
     padding: 15px;
   }
   .hamburger {
+    height: 50px;
+    width: 70px;
     display: block;
     position: absolute;
     right: 20px;
@@ -168,7 +170,213 @@ button:active {
 }
 
 .page {
-  padding-top: 10vh; /* Same as navbar height to ensure the page starts below the navbar */
+  padding-top: 7vh; /* Same as navbar height to ensure the page starts below the navbar */
   min-height: 200vh; /* Takes up the rest of the viewport height */
   background-color: white; /* Example background color */
+}
+
+.background {
+  background-image: url(/images/background.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+}
+
+@media (max-width: 767px) {
+  .background {
+    background-size: cover;
+  }
+}
+/* About page styling */
+.about-text {
+  justify-content: center;
+  display: flex;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 40px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  font-family: "Roboto", sans-serif;
+  line-height: 1.6;
+  color: #333;
+}
+
+.about-text h1 {
+  font-size: 36px;
+  font-weight: 600;
+  color: #2c3e50;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.about-text p {
+  font-size: 18px;
+  color: #666;
+  margin-bottom: 20px;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+  .about-text {
+    padding: 20px;
+  }
+  .about-text h1 {
+    font-size: 30px;
+  }
+  .about-text p {
+    font-size: 16px;
+  }
+}
+/* General styling for the input form */
+.input-form {
+  margin-top: 15%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background-color: #f8f8f8;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 10% auto;
+  max-width: 600px;
+  width: 100%;
+}
+.input-form h1 {
+  color: skyblue;
+}
+
+.form-group {
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+label {
+  display: flex;
+  justify-content: center;
+  font-size: 1rem;
+  color: skyblue;
+  margin-bottom: 5px;
+}
+
+input, select {
+  width: 100%;
+  padding: 5px;
+  margin-top: 5px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+input[type=tel], input[type=email], input[type=text], select {
+  height: 40px;
+}
+
+button.submit-button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 15px 32px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 20px;
+}
+
+button.submit-button:hover {
+  background-color: #45a049;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 767px) {
+  .input-form {
+    padding: 15px;
+  }
+  .form-group input, .form-group select {
+    font-size: 0.9rem;
+    padding: 10px;
+  }
+  button.submit-button {
+    padding: 12px 25px;
+    font-size: 0.9rem;
+  }
+}
+.button {
+  display: flex;
+  justify-content: center;
+}
+
+/* For additional styling like banner, navbar, etc., if needed */
+/* Add mobile styling for the navbar here if needed */
+.business-type {
+  text-align: center;
+  background-color: rgba(185, 182, 182, 0);
+}
+.business-type h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: #333;
+}
+.business-type .business-types-container {
+  display: flex; /* Default is flex for desktop */
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+.business-type .business-type {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  width: 150px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.business-type .business-type:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+.business-type .business-type i {
+  font-size: 2rem;
+  color: skyblue; /* Replace $maincolor with your primary color */
+  margin-bottom: 15px;
+}
+.business-type .business-type span {
+  font-size: 1rem;
+  color: #333;
+  text-align: center;
+}
+.business-type .business-type a {
+  text-decoration: none;
+}
+
+/* Mobile-first responsiveness */
+@media (max-width: 767px) {
+  .business-types-container {
+    display: grid; /* Switch to grid for mobile */
+    grid-template-columns: repeat(2, 1fr); /* Create 2x2 grid */
+    gap: 20px; /* Maintain spacing */
+    justify-content: center; /* Center grid in container */
+  }
+  .business-type {
+    width: 100%; /* Make each item stretch in grid */
+    max-width: 140px; /* Optional: Control max width */
+    padding: 15px; /* Adjust padding */
+    display: contents;
+  }
+  .business-type i {
+    font-size: 2rem; /* Adjust icon size */
+  }
+  .business-type span {
+    font-size: 0.9rem; /* Smaller font size for mobile */
+  }
 }/*# sourceMappingURL=index.css.map */

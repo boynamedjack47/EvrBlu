@@ -1,0 +1,79 @@
+@import './variables'; 
+
+.business-type {
+    text-align: center;
+    background-color: rgba(185,182,182, 0);
+  
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 30px;
+      color: #333;
+    }
+  
+    .business-types-container {
+      display: flex; /* Default is flex for desktop */
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+  
+    .business-type {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-decoration: none;
+      background: #fff;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      padding: 20px;
+      width: 150px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s, box-shadow 0.3s;
+  
+      &:hover {
+        transform: scale(1.05);
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+      }
+  
+      i {
+        font-size: 2rem;
+        color: $maincolor; /* Replace $maincolor with your primary color */
+        margin-bottom: 15px;
+      }
+  
+      span {
+        font-size: 1rem;
+        color: #333;
+        text-align: center;
+      }
+
+      a {
+        text-decoration: none;
+      }
+    }
+}
+
+/* Mobile-first responsiveness */
+@media (max-width: 767px) {
+    .business-types-container {
+        display: grid; /* Switch to grid for mobile */
+        grid-template-columns: repeat(2, 1fr); /* Create 2x2 grid */
+        gap: 20px; /* Maintain spacing */
+        justify-content: center; /* Center grid in container */
+    }
+  
+    .business-type {
+        width: 100%; /* Make each item stretch in grid */
+        max-width: 140px; /* Optional: Control max width */
+        padding: 15px; /* Adjust padding */
+        display: contents;
+    }
+  
+    .business-type i {
+        font-size: 2rem; /* Adjust icon size */
+    }
+
+    .business-type span {
+        font-size: 0.9rem; /* Smaller font size for mobile */
+    }
+}
