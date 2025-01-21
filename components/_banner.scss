@@ -1,6 +1,6 @@
-@import '../variables';  // Ensure correct path to variables.scss
-@import '/components/mixins';
-@import '../variables';  // Ensure correct path to variables.scss
+@import './variables';  // Ensure correct path to variables.scss
+@import './mixins';
+@import './variables';  // Ensure correct path to variables.scss
 
 /* Banner Styling */
 .banner { 

@@ -171,12 +171,12 @@ button:active {
 
 .page {
   padding-top: 7vh; /* Same as navbar height to ensure the page starts below the navbar */
-  min-height: 200vh; /* Takes up the rest of the viewport height */
+  min-height: 100vh; /* Takes up the rest of the viewport height */
   background-color: white; /* Example background color */
 }
 
 .background {
-  background-image: url(/images/background.jpg);
+  background-image: url(../images/background.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   min-height: 100vh;
@@ -193,7 +193,7 @@ button:active {
   display: flex;
   max-width: 800px;
   margin: 0 auto;
-  padding: 40px;
+  padding: 10px;
   background-color: #fff;
   border-radius: 8px;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
@@ -378,5 +378,108 @@ button.submit-button:hover {
   }
   .business-type span {
     font-size: 0.9rem; /* Smaller font size for mobile */
+  }
+}
+button {
+  background-color: #7eecff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 8px;
+  font-size: 1rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  background-image: linear-gradient(145deg, #7eecff, #cbf7ff);
+}
+button:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(126, 236, 255, 0.5);
+}
+button:hover {
+  background-image: linear-gradient(145deg, #b1f4ff, #4be4ff);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2), 0 3px 6px rgba(0, 0, 0, 0.15);
+}
+button:active {
+  transform: scale(0.98);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Banner Styling */
+.banner {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  background-color: rgba(185, 182, 182, 0.5); /* Darker transparent background */
+  min-height: -moz-fit-content;
+  min-height: fit-content; /* Ensure a minimum height for the banner */
+  width: 100%;
+  flex-wrap: wrap; /* Allow items to wrap */
+  padding: 20px 0; /* Add some padding */
+}
+
+.banner-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center the content inside the item */
+  color: black; /* Set text color */
+  margin: 0 20px; /* Add spacing between banner items */
+  text-align: center; /* Center the text */
+}
+
+.banner-item img {
+  width: 40px; /* Icon size */
+  height: 40px;
+  margin-bottom: 10px; /* Space between icon and text */
+}
+
+.banner-item p {
+  font-size: 1.2rem; /* Adjust font size */
+  margin: 0; /* Remove default margin */
+}
+
+button {
+  background-color: skyblue;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 8px;
+  font-size: 1rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  background-image: linear-gradient(145deg, skyblue, #c9e9f6);
+  /* Reuse the button style mixin */
+}
+button:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(135, 206, 235, 0.5);
+}
+button:hover {
+  background-image: linear-gradient(145deg, #b3e0f2, #5bbce4);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2), 0 3px 6px rgba(0, 0, 0, 0.15);
+}
+button:active {
+  transform: scale(0.98);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Mobile-first responsiveness */
+@media (max-width: 767px) {
+  .banner {
+    flex-direction: column; /* Stack items vertically */
+    padding: 10px 0; /* Adjust padding for mobile */
+  }
+  .banner-item {
+    margin: 10px 0; /* Space between items */
+    width: 80%; /* Make each banner item take up most of the width */
+  }
+  .banner-item img {
+    width: 30px; /* Smaller icons for mobile */
+    height: 30px;
+  }
+  .banner-item p {
+    font-size: 1rem; /* Smaller font size for mobile */
+  }
+  button {
+    background-color: skyblue; /* Ensure the button uses main color */
   }
 }/*# sourceMappingURL=index.css.map */
