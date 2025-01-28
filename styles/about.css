@@ -29,7 +29,7 @@
     min-height: 100vh;
     background-color: #f0f0f0; /* Light background color for contrast */
     background-image: url('../images/logo.png'); /* Replace with your logo path */
-    background-repeat: repeat;
+    background-repeat: space;
     background-size: 150px 150px; /* Adjust the size of the logo */
     background-position: 0 0;
    
