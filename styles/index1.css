@@ -1,0 +1,11 @@
+.content {
+    display: flex;
+    justify-content:space-between;
+    color: white;
+    margin-top: 20px;
+}
+
+h2 {
+    display: flex;
+    justify-content: center;
+}
