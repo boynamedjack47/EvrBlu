@@ -7,7 +7,7 @@
     border-radius: 10px; /* Optional: Rounded corners for the div */
     overflow: hidden; /* Ensure the image stays within the div */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Add a slight shadow for a polished look */
-    margin-top: 40px;
+    margin-top: 25px;
 }
 
 .photo-card img {
@@ -18,4 +18,19 @@
 }
 .page {
     background-color: #dfdfdf;
+   
+}
+
+
+/* Background Div */
+.background {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    background-color: #f0f0f0; /* Light background color for contrast */
+    background-image: url('../images/logo.png'); /* Replace with your logo path */
+    background-repeat: repeat;
+    background-size: 150px 150px; /* Adjust the size of the logo */
+    background-position: 0 0;
+   
 }
