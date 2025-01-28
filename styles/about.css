@@ -27,7 +27,7 @@
     position: relative;
     width: 100%;
     min-height: 100vh;
-    background-color: #f0f0f0; /* Light background color for contrast */
+    background-color: #dfdfdf; /* Light background color for contrast */
     background-image: url('../images/logo.png'); /* Replace with your logo path */
     background-repeat: space;
     background-size: 150px 150px; /* Adjust the size of the logo */
