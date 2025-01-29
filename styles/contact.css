@@ -34,3 +34,25 @@ h1 {
 img {
     height: 550px;
 }
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    .maincontent {
+        flex-direction: row; /* Stack form and image */
+        align-items: center;
+    }
+
+    .relax img {
+        max-width: 100%; /* Prevents it from being too large on small screens */
+        height: 400px;
+        display: none;
+    }
+
+    .input-form {
+        width: 100%;
+    }
+
+    .page h1 {
+        margin-top: 70px;
+    }
+   
+}
