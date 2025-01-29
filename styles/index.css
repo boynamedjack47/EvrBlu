@@ -276,7 +276,7 @@ button:active {
   background-color: #f8f8f8;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  margin: 10% auto;
+  margin: 4% auto;
   max-width: 600px;
   width: 100%;
 }
