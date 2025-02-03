@@ -78,9 +78,11 @@ body {
     justify-content: center;
     align-items: center;
     padding: 20px;
+    width: 100%; /* Ensures the container takes full width */
 }
 
 .contactbutton button {
+    width: 100%; /* Makes the button fill the entire width of .contactbutton */
     padding: 10px 20px;
     background: skyblue;
     /* color: white; */
@@ -236,3 +238,6 @@ body {
     }
   }
   
+  .contactbutton button {
+    width: 100%; 
+}

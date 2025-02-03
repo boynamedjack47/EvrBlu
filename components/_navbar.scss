@@ -20,7 +20,7 @@ body {
     backdrop-filter: blur(5px); /* Optional: Adds a slight blur effect behind the navbar */
     -webkit-backdrop-filter: blur(5px); /* Safari support */
     transition: background-color 0.3s ease-in-out; /* Smooth transition for background */
-    border-radius: 0 0 10px 10px; /* Only round the bottom-left and bottom-right corners */
+    border-radius: 0 0 5px 5px; /* Only round the bottom-left and bottom-right corners */
 
 }
 
