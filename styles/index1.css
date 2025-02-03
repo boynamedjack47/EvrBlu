@@ -3,7 +3,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    color: skyblue;
+    color: white;
     background-color: #37607c; /* A clean, professional background color */
 }
 
@@ -43,7 +43,7 @@ body {
 /* Service Section */
 .service h2, .offer h2 {
     margin-bottom: 15px;
-    color:  skyblue; /* Accent color */
+    color:  white; /* Accent color */
 }
 
 .service ul {
@@ -202,7 +202,7 @@ body {
   }
   
   .offer p {
-    font-size: 1.2rem;
+    font-size: 2.75rem;
     line-height: 1.6;
     font-weight: 600;
     letter-spacing: 1px;

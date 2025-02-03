@@ -20,6 +20,8 @@ body {
     backdrop-filter: blur(5px); /* Optional: Adds a slight blur effect behind the navbar */
     -webkit-backdrop-filter: blur(5px); /* Safari support */
     transition: background-color 0.3s ease-in-out; /* Smooth transition for background */
+    border-radius: 0 0 10px 10px; /* Only round the bottom-left and bottom-right corners */
+
 }
 
 /* Add background when scrolling */
@@ -46,7 +48,7 @@ body {
 }
 
 .navbar-links li a {
-    font-size: 1rem;
+    font-size: 1.5rem;
     text-decoration: none;
     padding: 10px;
     display: block;
@@ -125,7 +127,7 @@ body {
 /* Phone Number Styling */
 .phone-number {
     font-size: 1.7rem;
-    color: $maincolor;
+    color: white;
     text-decoration: none;
     margin: 0 auto;
     padding: 10px 20px;

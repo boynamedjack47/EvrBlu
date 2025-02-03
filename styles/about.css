@@ -1,12 +1,13 @@
 .photo-card {
     display: flex;
-    justify-content: center; /* Center the image horizontally */
-    align-items: center; /* Center the image vertically */
-    max-width: 400px; /* Set a max width for the div */
-    margin: 0 auto; /* Center the div within its container */
-    border-radius: 10px; /* Optional: Rounded corners for the div */
-    overflow: hidden; /* Ensure the image stays within the div */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Add a slight shadow for a polished look */
+    justify-content: center;
+    align-items: center;
+    max-width: 400px;
+    margin: 0 auto;
+    border-radius: 10px;
+    border: 5px solid white; /* Add this line to define the white border */
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     margin-top: 50px;
 }
 
@@ -24,13 +25,18 @@
 
 /* Background Div */
 .background {
-    position: relative;
-    width: 100%;
-    min-height: 100vh;
-    background-color: #dfdfdf; /* Light background color for contrast */
-    background-image: url('../images/logo.png'); /* Replace with your logo path */
-    background-repeat: space;
-    background-size: 150px 150px; /* Adjust the size of the logo */
-    background-position: 0 0;
-   
+background-image: none;
+background-color: #b89464;
 }
+
+/* d2b48c */
+
+.test {
+    display: flex;
+}
+
+.text {
+    color: white;
+    width: 500px;
+}
+
