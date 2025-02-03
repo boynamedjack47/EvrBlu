@@ -2,41 +2,56 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    max-width: 400px;
-    margin: 0 auto;
+    flex: 1; /* Makes the image take up half of the container */
+    max-width: 50%;
     border-radius: 10px;
-    border: 5px solid white; /* Add this line to define the white border */
+    border: 5px solid white;
     overflow: hidden;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     margin-top: 50px;
 }
 
 .photo-card img {
-    width: 100%; /* Make the image responsive */
-    height: auto; /* Maintain the image's aspect ratio */
-    object-fit: cover; /* Ensure the image fills the div while maintaining its aspect ratio */
-    border-radius: 10px; /* Match the div's rounded corners */
-}
-.page {
-    background-color: #dfdfdf;
-   
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
 }
 
+.page {
+    background-color: #dfdfdf;
+}
 
 /* Background Div */
 .background {
-background-image: none;
-background-color: #b89464;
+    background-image: none;
+    background-color: #b89464;
 }
-
-/* d2b48c */
 
 .test {
     display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px; /* Adds spacing between the image and text */
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .text {
+    flex: 1; /* Makes the text take up half of the container */
+    max-width: 50%;
     color: white;
-    width: 500px;
 }
 
+/* Responsive Design */
+@media (max-width: 768px) {
+    .test {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .photo-card, .text {
+        max-width: 100%;
+    }
+}
