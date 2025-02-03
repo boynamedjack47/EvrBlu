@@ -7,7 +7,7 @@
     border-radius: 10px; /* Optional: Rounded corners for the div */
     overflow: hidden; /* Ensure the image stays within the div */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Add a slight shadow for a polished look */
-    margin-top: 25px;
+    margin-top: 50px;
 }
 
 .photo-card img {
