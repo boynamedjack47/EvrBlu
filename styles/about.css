@@ -3,7 +3,7 @@
     justify-content: center;
     align-items: center;
     flex: 1; /* Makes the image take up half of the container */
-    max-width: 50%;
+    max-width: 47%;
     border-radius: 10px;
     border: 5px solid white;
     overflow: hidden;
@@ -40,7 +40,7 @@
 
 .text {
     flex: 1; /* Makes the text take up half of the container */
-    max-width: 50%;
+    max-width: 49%;
     color: white;
 }
 
