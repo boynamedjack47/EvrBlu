@@ -547,4 +547,8 @@ button:active {
   button {
     background-color: skyblue; /* Ensure the button uses main color */
   }
+}
+/* General Styling */
+body {
+  font-family: "Poppins", sans-serif !important;
 }/*# sourceMappingURL=index.css.map */
