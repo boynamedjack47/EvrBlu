@@ -161,3 +161,12 @@ body {
         margin-right: 135px;
     }
 }
+
+.navbar .logo a {
+    display: inline-block; /* Ensures the link only takes up the size of the image */
+}
+
+.navbar .logo img {
+    display: block; /* Prevents any extra spacing below the image */
+    max-width: 100%; /* Ensures the image scales correctly if needed */
+}
