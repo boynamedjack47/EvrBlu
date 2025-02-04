@@ -2,7 +2,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    flex: 1; /* Makes the image take up half of the container */
+    flex: 1; /* Ensures proportional scaling */
     max-width: 47%;
     border-radius: 10px;
     border: 5px solid white;
@@ -39,19 +39,46 @@
 }
 
 .text {
-    flex: 1; /* Makes the text take up half of the container */
+    text-align: center;
+    flex: 1;
     max-width: 49%;
     color: white;
 }
 
-/* Responsive Design */
+/* Improved Responsive Design */
 @media (max-width: 768px) {
     .test {
-        flex-direction: column;
+        flex-direction: row; /* Keeps the image and text side by side */
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .photo-card, .text {
+        max-width: 90%; /* Scales down proportionally */
+        flex: none; /* Prevents it from forcing a new row */
+    }
+
+    .text {
         text-align: center;
+        font-size: 0.9rem; /* Adjusts text size for better readability */
+    }
+}
+
+@media (max-width: 480px) {
+    .test {
+        flex-direction: column; /* Stacks on very small screens */
+        gap: 15px;
     }
 
     .photo-card, .text {
         max-width: 100%;
+    }
+
+    .text {
+        text-align: center;
+        font-size: 0.85rem;
+        padding: 0 10px; /* Adds some spacing */
     }
 }
