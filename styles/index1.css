@@ -235,7 +235,7 @@ body {
 /* Mobile Styling */
 @media (max-width: 768px) {
   .content {
-      flex-direction: column; /* Stack items vertically on smaller screens */
+      flex-direction: row; /* Stack items vertically on smaller screens */
       gap: 15px;
   }
 
@@ -296,11 +296,9 @@ body {
 /* Ensure Background Image Scales Properly */
 @media (max-width: 768px) {
   .background {
-      background-size:cover; /* Ensures it covers the screen */
-      background-position: center; /* Keeps it centered */
-      background-attachment: scroll; /* Ensures proper mobile scrolling */
-      width: 100%;
-      height: auto;
-      padding: 30px 15px; /* Adjust padding for smaller screens */
+      background-size: 100%; /* Increase this percentage to zoom out */
+      background-position: center;
+      background-repeat: no-repeat;
+      background-attachment: scroll;
   }
 }
