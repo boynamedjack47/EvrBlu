@@ -92,21 +92,6 @@ body {
     background: skyblue;
 }
 
-/* Mobile Styling */
-@media (max-width: 768px) {
-    .content {
-        flex-direction: column; /* Stack items vertically on smaller screens */
-        gap: 15px;
-    }
-
-    .service, .offer, .contactbutton {
-        flex: 1 1 100%; /* Full width for each section */
-    }
-
-    .contactbutton button {
-        width: 100%; /* Full-width button */
-    }
-}
 
 .service {
     text-align: center;
@@ -210,20 +195,6 @@ body {
     margin: 0 auto;
   }
   
-  @media (max-width: 768px) {
-    .offer {
-      padding: 30px;
-      max-width: 100%;
-    }
-  
-    .offer h1 {
-      font-size: 2rem; /* Adjust heading size on mobile */
-    }
-  
-    .offer p {
-      font-size: 1rem;
-    }
-  }
   
   .contactbutton button {
     width: 100%;
@@ -259,4 +230,77 @@ body {
 
 .contactbutton button:hover {
     background-color: deepskyblue;
+}
+
+/* Mobile Styling */
+@media (max-width: 768px) {
+  .content {
+      flex-direction: column; /* Stack items vertically on smaller screens */
+      gap: 15px;
+  }
+
+  .service, .offer, .contactbutton {
+      flex: 1 1 100%; /* Full width for each section */
+  }
+
+  .contactbutton button {
+      width: 100%; /* Full-width button */
+  }
+}
+
+@media (max-width: 768px) {
+  .offer {
+    padding: 30px;
+    max-width: 100%;
+  }
+
+  .offer h1 {
+    font-size: 2rem; /* Adjust heading size on mobile */
+  }
+
+  .offer p {
+    font-size: 1rem;
+  }
+}
+
+/* Fix Offer Section on Mobile */
+@media (max-width: 768px) {
+  .offer {
+      
+      max-width: 100%;
+      text-align: center;
+      word-wrap: break-word;
+      overflow-wrap: break-word;
+  }
+
+  .offer h1 {
+      font-size: 1.75rem; /* Reduce heading size */
+      line-height: 1.3;
+      margin-bottom: 10px;
+  }
+
+  .offer p {
+      font-size: 2rem; /* Adjust text size */
+      line-height: 1.4;
+      font-weight: 500;
+      letter-spacing: 0.5px;
+      word-wrap: break-word;
+      overflow-wrap: break-word;
+      white-space: normal;
+      max-width: 90%; /* Prevent overflow */
+      margin: 0 auto; /* Center text */
+      margin-bottom: 35px;
+  }
+}
+
+/* Ensure Background Image Scales Properly */
+@media (max-width: 768px) {
+  .background {
+      background-size:cover; /* Ensures it covers the screen */
+      background-position: center; /* Keeps it centered */
+      background-attachment: scroll; /* Ensures proper mobile scrolling */
+      width: 100%;
+      height: auto;
+      padding: 30px 15px; /* Adjust padding for smaller screens */
+  }
 }
