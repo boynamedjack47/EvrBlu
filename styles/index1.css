@@ -18,9 +18,10 @@ body {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap; /* Wrap on smaller screens */
-    max-width: 1200px; /* Limit the width for better readability */
+    max-width: 1000px; /* Limit the width for better readability */
     gap: 20px; /* Add spacing between items */
     border-radius: 12px;
+    margin-bottom: 50px;
 }
 
 /* Individual Sections */
@@ -244,7 +245,7 @@ body {
   }
 
   .contactbutton button {
-      width: 100%; /* Full-width button */
+      width: 90%; /* Full-width button */
   }
 }
 
@@ -300,5 +301,20 @@ body {
       background-position: center;
       background-repeat: no-repeat;
       background-attachment: scroll;
+  }
+}
+
+@media (max-width: 768px) {
+  .service-items {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr); /* Ensures two columns */
+      gap: 15px; /* Adds space between items */
+      justify-content: center;
+      align-items: center;
+  }
+
+  .service-item {
+      width: 100%; /* Ensure items fit inside the grid */
+      text-align: center;
   }
 }
