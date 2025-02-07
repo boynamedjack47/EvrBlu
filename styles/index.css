@@ -388,6 +388,33 @@ button.submit-button:hover {
 
 /* For additional styling like banner, navbar, etc., if needed */
 /* Add mobile styling for the navbar here if needed */
+.bottom-banner {
+  background-color: #3c4041; /* Dark background for the banner */
+  color: white; /* White text color */
+  padding: 15px 20px; /* Padding to give some space around the text and icon */
+  display: flex;
+  align-items: center; /* Aligns the content vertically */
+  bottom: 0; /* Positions the banner at the bottom of the page */
+  width: 100%; /* Makes the banner span the entire width */
+  z-index: 1000; /* Ensures the banner stays above other content */
+}
+
+.bottom-banner h1 {
+  margin: 0; /* Removes margin around the header */
+}
+
+.instagram-link {
+  font-size: 2rem; /* Instagram icon size */
+  color: white; /* Icon color */
+  text-decoration: none; /* Removes underline */
+  display: flex;
+  justify-content: flex-end;
+}
+
+.instagram-link:hover {
+  color: skyblue; /* Instagram brand color on hover */
+}
+
 .business-type {
   text-align: center;
   background-color: rgba(185, 182, 182, 0);
