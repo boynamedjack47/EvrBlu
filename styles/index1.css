@@ -328,7 +328,7 @@ body {
       text-align: center;
   }
   .service-item .icon:hover img {
-    transform: scale(1.0); /* Slight enlargement on hover */
+    transform: scale(.8); /* Slight enlargement on hover */
   }
   
 }
