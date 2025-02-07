@@ -1,3 +1,23 @@
+.page {
+    background-color: #dfdfdf;
+}
+
+/* Background Div */
+.background {
+    background-image: none;
+    background-color: #b89464;
+}
+
+.test {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px; /* Adds spacing between the image and text */
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+}
+
 .photo-card {
     display: flex;
     justify-content: center;
@@ -18,26 +38,7 @@
     border-radius: 10px;
 }
 
-.page {
-    background-color: #dfdfdf;
-}
-
-/* Background Div */
-.background {
-    background-image: none;
-    background-color: #b89464;
-}
-
-.test {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 20px; /* Adds spacing between the image and text */
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
+/* Text Section */
 .text {
     text-align: center;
     flex: 1;
@@ -60,9 +61,12 @@
         flex: none; /* Prevents it from forcing a new row */
     }
 
+    /* Adjusting font size dynamically */
     .text {
         text-align: center;
-        font-size: 0.9rem; /* Adjusts text size for better readability */
+        font-size: 1rem; /* Slightly smaller on mobile */
+        font-weight: 400;
+        line-height: 1.4; /* Makes it more readable */
     }
 }
 
@@ -77,8 +81,14 @@
     }
 
     .text {
-        text-align: center;
-        font-size: 0.85rem;
-        padding: 0 10px; /* Adds some spacing */
+        font-size: 0.9rem; /* Adjust text size further on smaller screens */
+        padding: 0 10px; /* Adds spacing to avoid text touching edges */
+        line-height: 1.5; /* Increases line height for better readability */
     }
+}
+
+/* Additional styling */
+h1 {
+    font-size: 1.8rem; /* Adjusts heading size */
+    margin-bottom: 20px; /* Adds space between the heading and paragraph */
 }
