@@ -317,4 +317,8 @@ body {
       width: 100%; /* Ensure items fit inside the grid */
       text-align: center;
   }
+  .service-item .icon:hover img {
+    transform: scale(1.0); /* Slight enlargement on hover */
+  }
+  
 }
