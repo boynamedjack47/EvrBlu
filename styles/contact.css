@@ -31,18 +31,14 @@ h1 {
     display: flex;
     justify-content: center;
     color: #3c4041;
-    margin-top: 30px; /* Adjusted the margin to reduce the gap */
+    margin-top: 30px;
 }
 
 .maincontent {
     display: flex;
     justify-content: space-between;
     width: 100%;
-    margin-top: 20px; /* Added this to control the gap between photo and input form */
-}
-
-img {
-    height: 550px;
+    margin-top: 20px;
 }
 
 /* Mobile responsiveness */
@@ -71,6 +67,22 @@ img {
 
     .input-form {
         width: 90%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;  /* Vertically centers form content */
+        height: 550px; /* Make the form the same height as the image */
+        padding: 20px;
+        background-color: rgba(0, 0, 0, 0.1); /* Optional: Add background color for visibility */
+        border-radius: 10px;
+    }
+
+    .input-form h1 {
+        margin-bottom: 20px;
+        font-size: 1.5rem;
+    }
+
+    .input-form .form-group {
+        margin-bottom: 15px;
     }
 
     .page h1 {
