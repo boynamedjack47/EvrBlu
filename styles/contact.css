@@ -72,7 +72,7 @@ h1 {
         justify-content: center;  /* Vertically centers form content */
         height: 550px; /* Make the form the same height as the image */
         padding: 20px;
-        background-color: rgba(0, 0, 0, 0.1); /* Optional: Add background color for visibility */
+       
         border-radius: 10px;
     }
 
