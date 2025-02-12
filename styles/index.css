@@ -391,7 +391,7 @@ button.submit-button:hover {
 .bottom-banner {
   background-color: #3c4041; /* Dark background for the banner */
   color: white; /* White text color */
-  padding: 15px 20px; /* Padding to give some space around the text and icon */
+  padding: 15px 0px; /* Padding to give some space around the text and icon */
   display: flex;
   align-items: center; /* Aligns the content vertically */
   bottom: 0; /* Positions the banner at the bottom of the page */

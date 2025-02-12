@@ -14,16 +14,17 @@ body {
     align-items: center;
 }
 
-.content {
+/* .content {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap; /* Wrap on smaller screens */
-    max-width: 1000px; /* Limit the width for better readability */
-    gap: 20px; /* Add spacing between items */
-    border-radius: 12px;
-    margin-bottom: 50px;
-    margin-top: 100px;
-}
+    /* max-width: 1000px; /* Limit the width for better readability */
+    /* gap: 20px; Add spacing between items */
+    /* border-radius: 12px; */
+    /* margin-bottom: 50px; */
+    /* margin-top: 100px; 
+}*/ 
+
 
 /* Individual Sections */
 .service, .offer, .contactbutton {
@@ -395,11 +396,32 @@ label {
   left: 50%;
   transform: translateX(-50%);
   width: 500px; /* Increase size */
-  z-index: 10;
+  
 }
 
 .mainlogo img {
   width: 100%;
   max-width: 500px; /* Adjust for even bigger size */
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch; /* Ensures all items have the same height */
+  flex-wrap: wrap; /* Ensures responsiveness */
+  max-width: 1000px;
+  gap: 20px;
+  border-radius: 12px;
+  margin-bottom: 50px;
+  margin-top: 100px;
+}
+
+.service, .offer, .pricing-widget {
+  flex: 1; /* Equal width */
+  min-width: 300px; /* Prevents items from shrinking too much */
+  background-color: rgba(0, 0, 0, 0.35);
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
 }
 
