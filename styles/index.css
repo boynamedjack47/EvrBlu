@@ -409,6 +409,7 @@ button.submit-button:hover {
   text-decoration: none; /* Removes underline */
   display: flex;
   justify-content: flex-end;
+  margin-left: 10px;
 }
 
 .instagram-link:hover {
