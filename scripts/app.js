@@ -31,3 +31,14 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 });
+
+
+/* Sliding scale js*/
+
+const slider = document.getElementById("pricing-slider");
+const priceDisplay = document.getElementById("price-display");
+const prices = ["$30", "$35", "$40"];
+
+slider.addEventListener("input", function () {
+  priceDisplay.textContent = prices[this.value];
+});
