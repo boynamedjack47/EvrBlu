@@ -22,6 +22,7 @@ body {
     gap: 20px; /* Add spacing between items */
     border-radius: 12px;
     margin-bottom: 50px;
+    margin-top: 100px;
 }
 
 /* Individual Sections */
@@ -333,24 +334,72 @@ body {
   
 }
 
-
+/* Pricing Widget Styling */
 .pricing-widget {
-  /* width: 300px; */
-  padding: 15px;
-  border: 1px solid #ccc;
+  flex: 1 1 calc(33.33% - 20px); /* Same width rule as service and offer sections */
+  background-color: rgba(0, 0, 0, 0.35); /* Match with service and offer */
   border-radius: 8px;
+  padding: 20px;
   text-align: center;
-  font-family: Arial, sans-serif;
+  color: white;
+  font-size: 1rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-input[type="range"] {
+
+/* Style the range input */
+#pricing-slider {
   width: 100%;
-  margin: 10px 0;
+  margin: 15px 0;
+  color: white;
 }
+
+/* Price Labels */
 .pricing-labels {
   display: flex;
   justify-content: space-between;
-  font-size: 14px;
+  font-size: 0.9rem;
+  margin-top: 10px;
+  color: white;
 }
+
+/* Price Display */
 #price-display {
   font-weight: bold;
+  font-size: 1.2rem;
+  color: white;
 }
+
+/* Mobile Styling */
+@media (max-width: 768px) {
+  .pricing-widget {
+      flex: 1 1 100%; /* Make it full width on mobile */
+      padding: 15px;
+  }
+
+  .pricing-labels {
+      font-size: 0.8rem;
+  }
+
+  #price-display {
+      font-size: 1rem;
+  }
+}
+
+label {
+  color: white;
+}
+
+.mainlogo {
+  position: absolute;
+  top: -8vh; /* Adjust as needed */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 500px; /* Increase size */
+  z-index: 10;
+}
+
+.mainlogo img {
+  width: 100%;
+  max-width: 500px; /* Adjust for even bigger size */
+}
+
