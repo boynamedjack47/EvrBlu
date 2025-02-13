@@ -200,7 +200,7 @@ body {
   
   
   .contactbutton button {
-    width: 100%;
+    width: 50%;
   }
 
 .offer {
@@ -212,7 +212,7 @@ body {
 }
 
 .contactbutton {
-    position: absolute; /* Position the button container absolutely */
+    /* position: absolute; Position the button container absolutely */
     bottom: 0; /* Align it to the bottom of the offer box */
     left: 0; /* Align it to the left side */
     width: 100%; /* Make the button span the entire width */
@@ -220,7 +220,7 @@ body {
 }
 
 .contactbutton button {
-    width: 100%; /* Make the button fill the width of the container */
+    width: 50%; /* Make the button fill the width of the container */
     padding: 12px; /* Add some padding for a better look */
     background-color: skyblue;
     color: white;
@@ -392,7 +392,7 @@ label {
 
 .mainlogo {
   position: absolute;
-  top: -11vh; /* Adjust as needed */
+  top: 0vh; /* Adjust as needed */
   left: 50%;
   transform: translateX(-50%);
   width: 500px; /* Increase size */

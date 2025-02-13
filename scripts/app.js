@@ -42,3 +42,29 @@ const prices = ["$30", "$35", "$40"];
 slider.addEventListener("input", function () {
   priceDisplay.textContent = prices[this.value];
 });
+
+ // Function to send the message when clicking the Book Now button
+ function sendMessage() {
+    const sliderValue = document.getElementById("pricing-slider").value;
+    let message = "Hey! I'm interested in a quote for my ";
+
+    // Create the message based on the pool size selected
+    if (sliderValue == 0) {
+        message += "small pool to be cleaned by Evrblu!";
+    } else if (sliderValue == 1) {
+        message += "medium pool to be cleaned by Evrblu!";
+    } else if (sliderValue == 2) {
+        message += "large pool to be cleaned by Evrblu!";
+    }
+
+    // Open the SMS link with the dynamic message
+    window.location.href = `sms:602-551-6565?body=${encodeURIComponent(message)}`;
+}
+
+document.getElementById("pricing-slider").addEventListener("input", function() {
+    const value = this.value;
+    const max = this.max;
+
+    // Update the background gradient based on slider value
+    this.style.background = `linear-gradient(to right, skyblue ${value / max * 100}%, #ddd ${value / max * 100}%)`;
+});

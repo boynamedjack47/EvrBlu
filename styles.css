@@ -2,7 +2,7 @@
 
 #content-container {
     width: 80%;
-    margin-bottom: 100px;
+    margin-bottom: 0px;
 }
 
 .content-box {
@@ -27,6 +27,7 @@
 
 
 .box {
+    font-size: 2rem;
     flex: 1;
     text-align: center;
     background-color: skyblue;
@@ -39,4 +40,51 @@
 
 .box:hover {
     background-color: deepskyblue;
+}
+/* 
+/* #slider {
+    overflow: hidden;
+    width: 50%;
+  } */ 
+
+  #pricing-slider {
+    -webkit-appearance: none;  /* Removes default styling for Webkit browsers */
+    appearance: none; /* Removes default styling for non-Webkit browsers */
+    width: 100%; /* Full width */
+    height: 15px; /* Height of the slider */
+    border-radius: 5px; /* Rounded corners */
+    background: linear-gradient(to right, skyblue 0%, skyblue 50%, #ddd 50%, #ddd 100%); /* Filled up to the thumb */
+    outline: none; /* Removes the default focus outline */
+}
+
+#pricing-slider::-webkit-slider-thumb {
+    -webkit-appearance: none; /* Removes default thumb styling */
+    appearance: none;
+    width: 25px; /* Thumb size */
+    height: 25px; /* Thumb size */
+    border-radius: 50%; /* Circular thumb */
+    background: #1E90FF; /* Thumb color */
+    cursor: pointer; /* Cursor pointer when hovering */
+}
+
+#pricing-slider::-moz-range-thumb {
+    width: 25px; /* Thumb size */
+    height: 25px; /* Thumb size */
+    border-radius: 50%; /* Circular thumb */
+    background: #1E90FF; /* Thumb color */
+    cursor: pointer;
+}
+
+#pricing-slider::-ms-thumb {
+    width: 25px; /* Thumb size */
+    height: 25px; /* Thumb size */
+    border-radius: 50%; /* Circular thumb */
+    background: #1E90FF; /* Thumb color */
+    cursor: pointer;
+}
+
+
+
+.contactbutton {
+   position: relative;
 }

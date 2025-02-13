@@ -93,6 +93,9 @@
                     <span>Large Pools</span>
                 </div>
                 <p>Price: <span id="price-display">$35</span> per week</p>
+                <div class="contactbutton">
+                <button id="book-now" onclick="sendMessage()">Book Now</button>
+            </div>
             </div>
         </div>
 </div>
@@ -100,8 +103,9 @@
             <div class="offer">
                 <p>Book now and get a $150 pool inspection completely free!</p>
                 <div class="contactbutton">
-                    <button onclick="window.location.href='contact.html'">Book Now</button>
+                    <button onclick="window.location.href='sms:602-551-6565?body=Im%20interested%20in%20booking%20a%20pool%20cleaning!'">Book Now</button>
                 </div>
+                
             </div>
         </div></div>
     </div>
@@ -109,7 +113,7 @@
     <div class="bottom-boxes">
         <div class="box" onclick="toggleContent('services-content')">Services</div>
         <div class="box" onclick="toggleContent('pricing-content')">Pricing</div>
-        <div class="box" onclick="toggleContent('offer-content')">Offer</div>
+        <div class="box" onclick="toggleContent('offer-content')">Limited Time Offer</div>
     </div>
     </div>
     <button id="returnToTop" class="return-to-top" aria-label="Return to Top">&#8593;</button>
@@ -136,5 +140,6 @@
         });
     }
     </script>
+       <script src="./scripts/app.js"></script>
 </body>
 </html>
