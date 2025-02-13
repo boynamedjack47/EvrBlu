@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/index1.css">
+    
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo">
+            <a href="index.html">
+                <img src="images/logo.png" alt="Evr Blu">
+            </a>
+        </div>
+        <a href="sms:602-551-6565?body=I%20am%20interested%20in%20a%20free%20pool%20inspection!" class="phone-number">
+            <i class="fas fa-comment-alt"></i> 
+            <span class="phone-text">602-551-6565</span> 
+        </a>
+        
+        <button class="hamburger" aria-label="Toggle navigation">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <ul class="navbar-links">
+            <li><a href="test.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Book Now</a></li>
+        </ul>
+    </div>
+
+    <div class="page">
+        <div class="background">
+            <div class="mainlogo">
+                <img src="./images/logo.png" alt="">
+            </div>
+            <div id="content-container">
+                <div id="services-content" class="content-box">   <div id="services" class="content-section">
+                    <div class="service">
+                        <h1>Services</h1>
+                        <div class="service-items">
+                            <div class="service-item">
+                                <div class="icon"><i class="fas fa-broom"></i></div>
+                                <div class="label"><h3>Weekly Cleanings</h3></div>
+                                <div class="info">
+                                    <h4>Weekly Cleanings</h4>
+                                    <p>Includes brushing walls, skimming debris, emptying all baskets, equipment check, chemical test, and adding all common chemicals needed to balance water. You will also receive a detailed email report with a picture of your pool when finished!</p>
+                                </div>
+                            </div>
+                            <div class="service-item">
+                                <div class="icon"><i class="fas fa-filter"></i></div>
+                                <div class="label"><h3>Filter Cleans</h3></div>
+                                <div class="info">
+                                    <h4>Filter Cleans</h4>
+                                    <p>Every 4 to 6 months, your filters get full of dirt and debris, increasing pressure and strain on your pool equipment. We clean and inspect each filter thoroughly to keep your pool crystal clear all year long.</p>
+                                </div>
+                            </div>
+                            <div class="service-item">
+                                <div class="icon"><i class="fas fa-tools"></i></div>
+                                <div class="label"><h3>Equipment Repair/Replacement</h3></div>
+                                <div class="info">
+                                    <h4>Equipment Repair/Replacement</h4>
+                                    <p>When we see signs of equipment malfunction, we are quick to locate the problem and notify you. We are happy to replace or repair any equipment that is causing your pool to look anything but perfect.</p>
+                                </div>
+                            </div>
+                            <div class="service-item">
+                                <div class="icon"><i class="fas fa-water"></i></div>
+                                <div class="label"><h3>Drain/Acid Wash</h3></div>
+                                <div class="info">
+                                    <h4>Drain/Acid Wash</h4>
+                                    <p>Fresh water is essential for a healthy pool! Draining and refilling with new water will not only make it look great but will also lower chemical use in the long run.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+                <div id="pricing-content" class="content-box">    <div id="pricing" class="content-section">
+                    <div class="pricing-widget">
+                        <label for="pricing-slider">Select Plan:</label>
+                        <input type="range" id="pricing-slider" min="0" max="2" step="1" value="1" />
+                        <div class="pricing-labels">
+                            <span>Small Pools</span>
+                            <span>Medium Pools</span>
+                            <span>Large Pools</span>
+                        </div>
+                        <p>Price: <span id="price-display">$35</span> per week</p>
+                    </div>
+                </div>
+        </div>
+                <div id="offer-content" class="content-box">   <div id="offer" class="content-section">
+                    <div class="offer">
+                        <p>Book now and get a $150 pool inspection completely free!</p>
+                        <div class="contactbutton">
+                            <button onclick="window.location.href='contact.html'">Book Now</button>
+                        </div>
+                    </div>
+                </div></div>
+            </div>
+        
+            <div class="bottom-boxes">
+                <div class="box" onclick="toggleContent('services-content')">Services</div>
+                <div class="box" onclick="toggleContent('pricing-content')">Pricing</div>
+                <div class="box" onclick="toggleContent('offer-content')">Offer</div>
+            </div>
+        
+          
+           
+        </div>
+    </div>
+
+    <button id="returnToTop" class="return-to-top" aria-label="Return to Top">&#8593;</button>
+    <div class="bottom-banner">
+        <a href="https://www.instagram.com/evrblupools?igsh=bmtqYWllbDdoemxt" target="_blank" class="instagram-link">
+            <i class="fa-brands fa-instagram"></i>
+        </a>
+    </div>
+    <script> 
+        function toggleContent(id) {
+            const contentBoxes = document.querySelectorAll('.content-box');
+            
+            contentBoxes.forEach(box => {
+                if (box.id === id) {
+                    box.style.display = box.style.display === 'block' ? 'none' : 'block';
+                } else {
+                    box.style.display = 'none';
+                }
+            });
+        }
+        </script>
+  
+</body>
+</html>

@@ -1,12 +1,12 @@
 .bottom-banner {
     background-color: #3c4041; /* Dark background for the banner */
     color: white; /* White text color */
-    padding: 15px 0px; /* Padding to give some space around the text and icon */
+    padding: 0px 0px; /* Padding to give some space around the text and icon */
     display: flex;
     align-items: center; /* Aligns the content vertically */
     bottom: 0; /* Positions the banner at the bottom of the page */
     width: 100%; /* Makes the banner span the entire width */
-    z-index: 1000; /* Ensures the banner stays above other content */
+ 
 }
 
 .bottom-banner h1 {
@@ -24,4 +24,13 @@
 
 .instagram-link:hover {
     color: skyblue; /* Instagram brand color on hover */
+}
+
+@media (max-width: 767px) {
+
+    .bottom-banner {
+        width: 100%;
+
+        padding: 15px 30px;
+    }
 }

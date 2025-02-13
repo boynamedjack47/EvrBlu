@@ -311,7 +311,7 @@ body {
     width: 100%;
     height: auto;
     min-height: 100vh; /* Ensures full viewport coverage */
-    padding: 30px 15px; /* Adjust padding */
+    padding: 30px 30px; /* Adjust padding */
 }
 
 }
@@ -392,7 +392,7 @@ label {
 
 .mainlogo {
   position: absolute;
-  top: -8vh; /* Adjust as needed */
+  top: -11vh; /* Adjust as needed */
   left: 50%;
   transform: translateX(-50%);
   width: 500px; /* Increase size */
@@ -425,3 +425,6 @@ label {
   text-align: center;
 }
 
+.offer {
+  padding: 50px;
+}
