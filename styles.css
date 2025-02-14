@@ -3,6 +3,7 @@
 #content-container {
     width: 80%;
     margin-bottom: 0px;
+    z-index: 10;
 }
 
 .content-box {
@@ -140,3 +141,25 @@
         font-size: 0.9rem;
     }
 }
+
+#pricing-slider {
+    pointer-events: auto;
+  }
+
+  .mainlogo {
+    display: flex;
+    justify-content: center;
+  }
+
+  .offer
+  {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+  }
+
+  #pricing-content {
+    
+    justify-content: center;
+  }

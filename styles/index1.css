@@ -147,7 +147,7 @@ body {
     text-align: center;
     border-radius: 10px;
     opacity: 0;
-    pointer-events: none;
+    /* pointer-events: none; */
     transition: opacity 0.3s ease, transform 0.3s ease;
     z-index: 10;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
@@ -436,13 +436,18 @@ label {
 }
 
 #pricing {
+  display: flex;
+  justify-content: center;
   margin-right: 25px;
 }
 
 @media (max-width: 768px) {
 
   .service  {
-   
+    justify-content: center;
+    flex-direction: column;
+    display: flex
+;
     margin: auto;
     margin-right: 25px;
   }

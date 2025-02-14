@@ -61,10 +61,15 @@ slider.addEventListener("input", function () {
     window.location.href = `sms:602-551-6565?body=${encodeURIComponent(message)}`;
 }
 
-document.getElementById("pricing-slider").addEventListener("input", function() {
+slider.addEventListener("input", function () {
+    console.log("Slider moved, updating price display");
+    priceDisplay.textContent = prices[this.value];
+  });
+  
+  slider.addEventListener("input", function() {
     const value = this.value;
     const max = this.max;
-
-    // Update the background gradient based on slider value
+    console.log("Slider moved, updating background", value, max);
     this.style.background = `linear-gradient(to right, skyblue ${value / max * 100}%, #ddd ${value / max * 100}%)`;
-});
+  });
+  
