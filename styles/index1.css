@@ -373,7 +373,7 @@ body {
 /* Mobile Styling */
 @media (max-width: 768px) {
 
-  .mainlogo {
+  .mainlogo img {
     margin-left: 25px ;
   }
   .pricing-widget {
