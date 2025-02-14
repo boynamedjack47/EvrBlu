@@ -41,6 +41,7 @@ body {
     padding: 0;
     margin: 0;
     display: flex;
+    
 }
 
 .navbar-links li {
@@ -106,6 +107,7 @@ body {
 
     .navbar-links.active {
         display: flex;
+        z-index: 10;
     }
 
     .navbar-links li {

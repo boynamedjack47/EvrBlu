@@ -500,10 +500,19 @@ label {
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
+  
   /* Your CSS rules for medium-sized screens go here */
+ .service {
+  padding: 0px;
+
+ }
+ .offer {
+  padding: 30px;
+ }
   .service-items {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+    gap: 0px;
   }
   .service h1 {
     font-size: 2rem;
