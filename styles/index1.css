@@ -311,7 +311,7 @@ body {
     width: 100%;
     height: auto;
     min-height: 100vh; /* Ensures full viewport coverage */
-    padding: 30px 30px; /* Adjust padding */
+    padding: 30px 6px; /* Adjust padding */
 }
 
 }
@@ -444,7 +444,7 @@ label {
   .service  {
    
     margin: auto;
-    margin-right: 50px;
+    margin-right: 25px;
   }
   /* Adjust the outer container padding if needed */
   #services-content {
@@ -491,5 +491,20 @@ label {
   #services-content .service-item .info p {
     font-size: 0.9rem;
     line-height: 1.4;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  /* Your CSS rules for medium-sized screens go here */
+  .service-items {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .service h1 {
+    font-size: 2rem;
+  }
+  /* Other adjustments */
+  .service {
+    width: 770px;
   }
 }

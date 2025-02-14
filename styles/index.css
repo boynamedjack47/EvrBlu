@@ -418,7 +418,7 @@ button.submit-button:hover {
 @media (max-width: 767px) {
   .bottom-banner {
     width: 100%;
-    padding: 15px 30px;
+    padding: 15px 7px;
   }
 }
 .business-type {
