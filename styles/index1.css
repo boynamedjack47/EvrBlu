@@ -441,8 +441,10 @@ label {
 
 @media (max-width: 768px) {
 
-  .service {
-    margin-right: 25px;
+  .service  {
+   
+    margin: auto;
+    margin-right: 50px;
   }
   /* Adjust the outer container padding if needed */
   #services-content {
