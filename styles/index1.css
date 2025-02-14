@@ -372,6 +372,10 @@ body {
 
 /* Mobile Styling */
 @media (max-width: 768px) {
+
+  .mainlogo {
+    margin-left: 25px ;
+  }
   .pricing-widget {
       flex: 1 1 100%; /* Make it full width on mobile */
       padding: 15px;
