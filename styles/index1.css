@@ -375,6 +375,7 @@ body {
 
   .mainlogo img {
     margin-left: 25px ;
+    margin-bottom: 100px;
   }
   .pricing-widget {
       flex: 1 1 100%; /* Make it full width on mobile */
@@ -434,3 +435,59 @@ label {
   margin-right: 25px;
 }
 
+#pricing {
+  margin-right: 25px;
+}
+
+@media (max-width: 768px) {
+
+  .service {
+    margin-right: 25px;
+  }
+  /* Adjust the outer container padding if needed */
+  #services-content {
+    padding: 10px;
+  }
+  
+  /* Scale down the Services heading */
+  #services-content .service h1 {
+    font-size: 1.8rem; /* smaller heading */
+    margin-bottom: 15px;
+  }
+  
+  /* Change the layout of the service items */
+  #services-content .service-items {
+    margin-right: 25px;
+    display: grid;
+    /* grid-template-columns: 1fr; Use a single column layout; use 2 columns if you prefer: repeat(2, 1fr) */
+    gap: 10px;
+    justify-items: center;
+  }
+  
+  /* Adjust individual service items */
+  #services-content .service-item {
+    width: 100%;       /* Make service items use full width */
+    height: auto;      /* Let the height adjust automatically */
+    padding: 10px;     /* Less padding for mobile */
+  }
+  
+  /* Scale down icons if they’re images */
+  #services-content .service-item .icon img {
+    width: 80px;
+    height: 80px;
+  }
+  
+  /* Optionally, adjust text sizes within each service item */
+  #services-content .service-item .label h3 {
+    font-size: 1.2rem;
+    margin-bottom: 8px;
+  }
+  #services-content .service-item .info h4 {
+    font-size: 1rem;
+    margin-bottom: 5px;
+  }
+  #services-content .service-item .info p {
+    font-size: 0.9rem;
+    line-height: 1.4;
+  }
+}
