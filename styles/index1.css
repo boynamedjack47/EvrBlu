@@ -444,6 +444,14 @@ label {
 
 @media (max-width: 768px) {
 
+  .offer {
+    padding: 10px;
+    margin-right: 25px;
+    display: flex;
+    justify-content: center;
+  }
+  
+
   .service  {
     justify-content: center;
     flex-direction: column;
