@@ -376,6 +376,7 @@ body {
   .mainlogo img {
     margin-left: 25px ;
     margin-bottom: 100px;
+    left: 51%;
   }
   .pricing-widget {
       flex: 1 1 100%; /* Make it full width on mobile */

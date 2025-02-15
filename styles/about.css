@@ -92,3 +92,10 @@ h1 {
     font-size: 1.9rem; /* Adjusts heading size */
     margin-bottom: 20px; /* Adds space between the heading and paragraph */
 }
+
+@media (max-width: 767px) {
+    .bottom-banner {
+      width: 100%;
+      padding: 15px 0px;
+    }
+  }
