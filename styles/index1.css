@@ -311,7 +311,7 @@ body {
     width: 100%;
     height: auto;
     min-height: 100vh; /* Ensures full viewport coverage */
-    padding: 0px 15px; /* Adjust padding */
+    padding: 0px 19px; /* Adjust padding */
 }
 
 }
