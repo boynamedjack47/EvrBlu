@@ -311,7 +311,7 @@ body {
     width: 100%;
     height: auto;
     min-height: 100vh; /* Ensures full viewport coverage */
-    padding: 30px 30px; /* Adjust padding */
+    padding: 0px 0px; /* Adjust padding */
 }
 
 }
@@ -406,7 +406,7 @@ label {
 }
 
 .mainlogo img {
-  width: 100%;
+  width: 95%;
   max-width: 500px; /* Adjust for even bigger size */
 }
 
