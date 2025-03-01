@@ -109,9 +109,9 @@
 
 @media (max-width: 768px) {
 
-    .content-box {
+    /* .content-box {
         width: 450px;
-    }
+    } */
     #services-content {
         width: 95%;
         padding: 20px;
